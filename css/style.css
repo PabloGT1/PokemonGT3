@@ -1,3 +1,16 @@
 body {
-	background-color: red;
+	background-image: url("img/fondo.png") no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.nombres {
+	font-family: elephant;
+	font-size: 25px;
+	color: black;
+	text-align: center;
+}
+
+.cuadro {
+	border: 3px solid red;
 }
