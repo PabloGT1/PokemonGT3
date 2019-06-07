@@ -3,7 +3,7 @@ var pokemon = angular.module("pokemon", [])
 pokemon.controller("pokedex", function($scope,$rootScope,$http){
 	$scope.pokedexB = [];
 
-	for (var i = 0; i < 152; i++) {
+	for (var i = 0; i < 100; i++) {
 
 	$http({
 		method: "GET",

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="pokemon">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<meta charset="utf-8">
+		<title> Pokémon GT </title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="icon" href="img/icono.png">
+	</head>
+	<body ng-controller="pokedex">
+		<div class="container-fluid">
+			<br>
+			<div class="row">
+				<div class="col-md-12">
+					<br>
+					<center><img class="poke" src="img/pokemon.png"></center>
+					<center><img class="pok" src="img/login.png"></center>
+				</div>
+			</div>
+			<br><br><br><br>
+			<div class="row">
+				<div class="col-md-3" ng-repeat="poke in pokedexB">
+					<div class="cuadro">
+						<img class="marcos" src="{{poke.data.sprites.front_default}}">
+						<p class="name">{{poke.data.name}}</p>
+					</div>
+				</div>
+			</div>
+			<button class="boton" style="text-align: right;"> <a href="index.html"> Back </a> </button>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+		<script src="js/bootstrap.css"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

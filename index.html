@@ -1,17 +1,45 @@
 <!DOCTYPE html>
-<html ng-app="pokemon">
+<html>
 	<head>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<meta charset="utf-8">
-		<title>	POKEMON GT </title>
+		<title>	Login </title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="icon" href="img/icono.png">
-		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body ng-controller="pokedex">
-		<div class="cuadro" ng-repeat="poke in pokedexB">
-			<span class="nombres">{{poke.data.name}}</span>
+	<body>
+		<div class="container-fluid">
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="titulo"> Inicio de Sesión </h1>
+					<h2 class="subtitulo"> ¡Bienvenido!</h2>
+				</div>
+			</div>
+			<br><br><br>
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<center><form class="login" method="GET">
+						<center><img class="img" src="img/login.png"></center>
+						Nombre de Usuario: <input class="nomcon" type="text" placeholder="Ingrese Nombre">
+						<br>
+						<br>
+						Contraseña: <input class="nomcon" type="password" placeholder="Ingrese Contraseña">
+						<br>
+						<br>
+						<button class="boton"> <a href="inicio.html"> Go </a> </button>
+						<br><br>
+						<label class="lbl-registro">¿No tienes cuenta? <a href="registro.html">Registrate</a> </label>
+					</form></center>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
-		<script src="js/script.js"></script>
+		<script src="js/bootstrap.css"></script>
+		<script src="script.js"></script>
 	</body>
 </html>
